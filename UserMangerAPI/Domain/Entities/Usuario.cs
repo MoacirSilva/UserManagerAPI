@@ -1,7 +1,10 @@
-﻿namespace UserManagerAPI.Domain.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace UserManagerAPI.Domain.Entities
 {
     public class Usuario
     {
+        [Key]
         public int IdUsuario { get; set; }
         public required string Nome {  get; set; }
         public required string Senha { get; set; }
